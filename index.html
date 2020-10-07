@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <style>
+    .language-switcher {
+        max-width: 1920px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .language-switcher > ul {
+        max-width: 1320px;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+    .language-switcher > ul > li {
+        list-style: none;
+        padding: 0;
+    }
+    .language-switcher > ul > li > a {
+        list-style: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    .language-switcher > ul > li > a > img {
+        width: 36px;
+        height: 36px;
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+
+    <section class="language-switcher">
+    <ul>
+        <li><a onclick="$('.goog-te-banner-frame').contents().find('.goog-close-link img').click();"><img src="img/ru.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(английский)').click();"><img src="img/gb.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(французский)').click();"><img src="img/fr.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(немецкий)').click();"><img src="img/de.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(испанский)').click();"><img src="img/es.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(венгерский)').click();"><img src="img/hu.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(итальянский)').click();"><img src="img/it.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(японский)').click();"><img src="img/jp.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(македонский)').click();"><img src="img/mk.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(нидерландский)').click();"><img src="img/nl.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(польский)').click();"><img src="img/pl.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(португальский)').click();"><img src="img/pt.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(румынский)').click();"><img src="img/ro.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(боснийский)').click();"><img src="img/rs.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(турецкий)').click();"><img src="img/tr.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(вьетнамский)').click();"><img src="img/vn.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(албанский)').click();"><img src="img/al.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(болгарский)').click();"><img src="img/bg.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(китайский)').click();"><img src="img/cn.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(чешский)').click();"><img src="img/cz.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(иврит)').click();"><img src="img/il.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(греческий)').click();"><img src="img/gr.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(арабский)').click();"><img src="img/arabic.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(корейский)').click();"><img src="img/kr.png" alt=""></a></li>
+        <li><a onclick="$('.goog-te-menu-frame').contents().find('.goog-te-menu2-item > div:contains(литовский)').click();"><img src="img/lit.png" alt=""></a></li>
+    </ul>
+    <span id="google_translate_element" style="display: none;"></span>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <br/>
+    <center>Привет, мир!</center>
+
+</body>
+</html>
